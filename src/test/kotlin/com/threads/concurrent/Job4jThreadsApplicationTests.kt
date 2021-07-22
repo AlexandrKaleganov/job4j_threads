@@ -1,4 +1,4 @@
-package com.threads.demo
+package com.threads.concurrent
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

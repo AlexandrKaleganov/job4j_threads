@@ -1,4 +1,4 @@
-package com.threads.demo
+package com.threads.concurrent
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
