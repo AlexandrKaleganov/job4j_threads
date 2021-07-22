@@ -9,6 +9,7 @@ public class ConcurrentOutput {
     @Test
     public void testThread() {
         new Thread(() -> log.info(Thread.currentThread().getName())).start();
+        new Thread(() -> log.info(Thread.currentThread().getName())).start();
         log.info(Thread.currentThread().getName());
     }
 
