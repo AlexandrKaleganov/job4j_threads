@@ -18,8 +18,10 @@ public class ThreadState {
         log.info(two.getState() + " Выведет NEW");
         first.start();
         two.start();
-        first.join();
-        two.join();
+        while (first.getState() != Thread.State.TERMINATED &&  two.getState() != Thread.State.TERMINATED ){
+            System.out.println(first.getState());
+            System.out.println(two.getState());
+        }
         log.info(first.getState());
         log.info(two.getState());
         log.info("Работа завершена.");
