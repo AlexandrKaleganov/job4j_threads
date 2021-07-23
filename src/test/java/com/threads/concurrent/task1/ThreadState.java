@@ -18,7 +18,7 @@ public class ThreadState {
         log.info(two.getState() + " Выведет NEW");
         first.start();
         two.start();
-        while (first.getState() != Thread.State.TERMINATED &&  two.getState() != Thread.State.TERMINATED ){
+        while (first.getState() != Thread.State.TERMINATED || two.getState() != Thread.State.TERMINATED ){
             System.out.println(first.getState());
             System.out.println(two.getState());
         }
