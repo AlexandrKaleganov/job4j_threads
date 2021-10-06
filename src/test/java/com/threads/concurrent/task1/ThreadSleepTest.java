@@ -1,12 +1,14 @@
 package com.threads.concurrent.task1;
 
 import lombok.extern.log4j.Log4j2;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 /**
  * The type Thread sleep.
  */
 @Log4j2
+@DisplayName("1.2. Режим ожидания. [#231217 #180660]")
 public class ThreadSleepTest {
 
     /**
@@ -23,7 +25,7 @@ public class ThreadSleepTest {
                         System.out.println("Start loading ... ");
                         for (int i = 0; i < 110; i = i + 10) {
                             System.out.print("\rLoading : " + i + "%");
-                            Thread.sleep(500);
+                            Thread.sleep(200);
                         }
                     } catch (InterruptedException e) {
                         log.error(e.getMessage(), e);

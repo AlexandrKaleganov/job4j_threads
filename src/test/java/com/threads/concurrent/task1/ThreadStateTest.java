@@ -1,12 +1,14 @@
 package com.threads.concurrent.task1;
 
 import lombok.extern.log4j.Log4j2;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 /**
  * The type Thread state test.
  */
 @Log4j2
+@DisplayName("1.1. Состояние нити. [#229175 #180638].")
 public class ThreadStateTest {
 
     /**
