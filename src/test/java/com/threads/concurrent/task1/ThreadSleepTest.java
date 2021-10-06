@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
  * The type Thread sleep.
  */
 @Log4j2
-public class ThreadSleep {
+public class ThreadSleepTest {
 
     /**
      * Sleep test.

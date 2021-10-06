@@ -4,7 +4,7 @@ import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 
 @Log4j2
-public class ThreadState {
+public class ThreadStateTest {
 
     @Test
     public void testState() throws InterruptedException {
