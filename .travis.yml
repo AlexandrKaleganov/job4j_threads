@@ -17,3 +17,7 @@ notifications:
       - alexmur07@mail.ru
     on_success: never # default: change
     on_failure: always # default: always
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+script:
+  - mvn test
