@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class ThreadSleepTest {
 
     /**
-     * Sleep test.
+     * 1.2. Режим ожидания. [#231217 #180660]
      *
      * @throws InterruptedException
      *         the interrupted exception
