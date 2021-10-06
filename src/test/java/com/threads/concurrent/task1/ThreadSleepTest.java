@@ -23,7 +23,7 @@ public class ThreadSleepTest {
                         System.out.println("Start loading ... ");
                         for (int i = 0; i < 110; i = i + 10) {
                             System.out.print("\rLoading : " + i + "%");
-                            Thread.sleep(500);
+                            Thread.sleep(200);
                         }
                     } catch (InterruptedException e) {
                         log.error(e.getMessage(), e);
